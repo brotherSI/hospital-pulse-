@@ -13,9 +13,10 @@ import { Control } from "react-hook-form";
 
 interface CustomProps {
   control: Control<any>;
+  fieldType: FormFieldType;
 }
 
-const CustomFormField = ({ control }: CustomProps) => {
+const CustomFormField = ({ control, fieldType }: CustomProps) => {
   return (
     <FormField
       control={control}
