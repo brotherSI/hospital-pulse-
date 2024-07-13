@@ -48,8 +48,28 @@ const PatientForm = () => {
           fieldType={FormFieldType.INPUT}
           control={form.control}
           name="name"
-          placeholder="John Doe"
-          iconSrc="/assests/icons/user.svg"
+          label="Name"
+          placeholder="Jabu Zulu"
+          iconSrc="/assets/icons/user.svg"
+          iconAlt="user"
+        />
+        <CustomFormField
+          fieldType={FormFieldType.INPUT}
+          control={form.control}
+          name="email"
+          label="Label"
+          placeholder="jabuzulu@email.com"
+          iconSrc="/assets/icons/email.svg"
+          iconAlt="email"
+        />
+        <CustomFormField
+          fieldType={FormFieldType.PHONE_INPUT}
+          control={form.control}
+          name="Phone"
+          label="Phone"
+          placeholder="+27 123 123 123"
+          iconSrc="/assets/icons/email.svg"
+          iconAlt="phone"
         />
         <Button type="submit">Submit</Button>
       </form>
